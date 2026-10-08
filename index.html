@@ -7,11 +7,11 @@
 <meta name="description" content="H-20 — an original mobile investigation game.">
 <title>H-20 — Investigation</title>
 <link rel="stylesheet" href="css/main.css">
-</head>
+<style>.boot-screen{padding:28px 0}.boot-screen h1{margin-top:8px}.boot-error{border:1px solid #6b3434;background:#241416;border-radius:14px;padding:18px;margin-top:20px}.boot-error code{display:block;margin-top:10px;color:#d9a0a0;white-space:pre-wrap;word-break:break-word;font-size:11px}</style></head>
 <body>
 <div id="app">
 <header class="topbar"><div class="brand"><span class="eyebrow">CASE FILE</span><strong>H-20</strong></div><button id="saveBtn" class="icon-btn">SAVE</button></header>
-<main id="screen" class="screen" aria-live="polite"></main>
+<main id="screen" class="screen" aria-live="polite"><div class="boot-screen"><span class="label">CASE H-20</span><h1>INITIALIZING CASE…</h1><p class="muted">Loading investigation files.</p></div></main>
 <nav id="nav" class="bottom-nav" aria-label="Investigation">
 <button data-view="case" class="active"><span>CASE</span></button>
 <button data-view="evidence"><span>EVIDENCE</span><b id="evidenceCount">0</b></button>
