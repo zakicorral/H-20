@@ -1,0 +1,7 @@
+const Phone={
+open(){GameUI.modal('<div class="phone"><div class="phone-head"><span>09:41</span><span>● ● ●</span></div><h2>HIBA\'S PHONE</h2><p class="tiny">Recovered device — partial access</p><div class="app-tile" onclick="Phone.messages()"><span>MESSAGES</span><small>1 unread</small></div><div class="app-tile" onclick="Phone.photos()"><span>PHOTOS</span><small>LOCKED</small></div><div class="app-tile" onclick="Phone.notes()"><span>NOTES</span><small>LOCKED</small></div><div class="app-tile" onclick="Phone.files()"><span>FILES</span><small>LOCKED</small></div></div>')},
+messages(){GameUI.modal('<div class="phone"><div class="phone-head"><button class="close" onclick="Phone.open()">‹</button><span>MESSAGES</span></div><div class="message"><div class="tiny">UNKNOWN NUMBER · 21:14</div>Do not start with the obvious thing.</div><div class="message"><div class="tiny">UNKNOWN NUMBER · 21:15</div>Look at what was left behind.</div><div class="message you"><div class="tiny">YOU</div>Who is this?</div><div class="message"><div class="tiny">UNKNOWN NUMBER · 21:16</div>You already know the first place to look.</div><button class="btn primary" onclick="Puzzles.openFirst()">Investigate the scene</button></div>')},
+photos(){GameUI.modal('<h2>PHOTOS</h2><p class="muted">ACCESS DENIED. A clue from another section is required.</p>')},
+notes(){GameUI.modal('<h2>NOTES</h2><p class="muted">ACCESS DENIED. The notes are encrypted.</p>')},
+files(){GameUI.modal('<h2>FILES</h2><p class="muted">ACCESS DENIED. No useful metadata recovered.</p>')}
+};
