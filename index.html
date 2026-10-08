@@ -3,25 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0b0d10">
-<title>H-20 — Case File</title>
+<meta name="theme-color" content="#090b0e">
+<meta name="description" content="H-20 — an original mobile investigation game.">
+<title>H-20 — Investigation</title>
 <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 <div id="app">
-  <header class="topbar">
-    <div><span class="eyebrow">CASE FILE</span><strong>H-20</strong></div>
-    <button id="saveBtn" class="icon-btn" aria-label="Save">SAVE</button>
-  </header>
-  <main id="screen" class="screen"></main>
-  <nav id="nav" class="bottom-nav" aria-label="Investigation">
-    <button data-view="case" class="active">CASE</button>
-    <button data-view="evidence">EVIDENCE <span id="evidenceCount">0</span></button>
-    <button data-view="phone">PHONE</button>
-    <button data-view="notes">NOTES</button>
-  </nav>
+<header class="topbar"><div class="brand"><span class="eyebrow">CASE FILE</span><strong>H-20</strong></div><button id="saveBtn" class="icon-btn">SAVE</button></header>
+<main id="screen" class="screen" aria-live="polite"></main>
+<nav id="nav" class="bottom-nav" aria-label="Investigation">
+<button data-view="case" class="active"><span>CASE</span></button>
+<button data-view="evidence"><span>EVIDENCE</span><b id="evidenceCount">0</b></button>
+<button data-view="phone"><span>PHONE</span></button>
+<button data-view="notes"><span>NOTES</span></button>
+</nav>
 </div>
-<div id="modal" class="modal hidden"></div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true"></div>
+<script src="js/data.js"></script>
 <script src="js/state.js"></script>
 <script src="js/evidence.js"></script>
 <script src="js/phone.js"></script>
